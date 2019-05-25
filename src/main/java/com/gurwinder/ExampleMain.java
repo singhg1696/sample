@@ -29,6 +29,7 @@ public class ExampleMain {
 
         int z[]=exampleMain.reverseArray(y);
         System.out.println(z);
+        exampleMain.handleString();
 
     }
 
@@ -51,6 +52,27 @@ public class ExampleMain {
             rev[rev_index--]=arr[i];     //for each loop
         }
        return rev;
+
+    }
+
+    public void handleString()
+    {
+      String s1= "Gurwinder Singh";
+      char Result=s1.charAt(5);
+      boolean Contains= s1.contains("in");
+      boolean endsWith = s1.endsWith("gh");
+      String replaceWith=s1.replace("Gurwinder Singh","Guri");
+      int length=s1.length();
+      int index=s1.indexOf("S");
+      String uppercase=s1.toUpperCase();
+
+        System.out.println("Result is  :"+Result);
+        System.out.println("Contains :"+ Contains);
+        System.out.println("Ends with :"+endsWith);
+        System.out.println("Replaced Chracter: "+replaceWith);
+        System.out.println("Length is : "+length);
+        System.out.println("Index : "+index);
+        System.out.println("Upper case: "+ uppercase);
 
     }
 }
